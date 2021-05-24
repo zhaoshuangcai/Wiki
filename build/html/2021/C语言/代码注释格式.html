@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>代码注释格式 &mdash; 笔记 V1.0.0 文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Samba的安装与使用" href="../Linux/Samba%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.html" />
+    <link rel="prev" title="知识库" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> 笔记
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">知识库</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">代码注释格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Linux/Samba%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.html">Samba的安装与使用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Linux/Read%20the%20Docs%E7%9A%84%E4%BD%BF%E7%94%A8.html">Read the Docs的使用</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">笔记</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">知识库</a> &raquo;</li>
+        
+      <li>代码注释格式</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/2021/C语言/代码注释格式.md.txt" rel="nofollow"> 查看页面源码</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>代码注释格式<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/*****************************************************************************************************</span>
+<span class="cm">*    函 数 名:    my_hal_printf</span>
+<span class="cm">*    函数功能：    打印数据</span>
+<span class="cm">*    形    参：    format     [out] 格式化字符串 </span>
+<span class="cm">                  ...     [in]不定参数</span>
+<span class="cm">*    返 回 值：</span>
+<span class="cm">*****************************************************************************************************/</span>
+<span class="kt">void</span> <span class="nf">my_hal_printf</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">format</span><span class="p">,...)</span>
+<span class="p">{</span>
+    <span class="kt">unsigned</span> <span class="kt">short</span> <span class="n">usRet</span><span class="p">;</span>
+    <span class="k">static</span> <span class="kt">char</span> <span class="n">pcBuf</span><span class="p">[</span><span class="mi">128</span><span class="p">];</span>
+    <span class="kt">va_list</span> <span class="n">vaArgP</span><span class="p">;</span>
+    <span class="n">va_start</span><span class="p">(</span><span class="n">vaArgP</span><span class="p">,</span> <span class="n">format</span><span class="p">);</span>    
+    <span class="n">usRet</span> <span class="o">=</span> <span class="n">vsnprintf</span><span class="p">(</span><span class="n">pcBuf</span><span class="p">,</span> <span class="mh">0xffff</span><span class="p">,</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">format</span><span class="p">,</span> <span class="n">vaArgP</span><span class="p">);</span>
+    <span class="n">uart_transmit</span><span class="p">((</span><span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="o">*</span><span class="p">)</span><span class="n">pcBuf</span><span class="p">,</span> <span class="n">usRet</span><span class="p">);</span>
+    <span class="n">va_end</span><span class="p">(</span><span class="n">vaArgP</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/***************************************************************************************************************</span>
+<span class="cm">*    函数名称:    int main(int argc,char**argv)</span>
+<span class="cm">*    函数功能:    打印字符</span>
+<span class="cm">*    函数入口:    argc    [in]    参数长度</span>
+<span class="cm">				argv    [in]    参数内容</span>
+<span class="cm">*    函数返回:    0 成功</span>
+<span class="cm">*    创建者  :    Johnny</span>
+<span class="cm">*    创建日期:    20201209</span>
+<span class="cm">***************************************************************************************************************/</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span><span class="kt">char</span><span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello world!</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../Linux/Samba%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.html" class="btn btn-neutral float-right" title="Samba的安装与使用" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="知识库" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2021, zhaoshuangcai.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
